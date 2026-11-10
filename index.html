@@ -597,6 +597,14 @@ footer .btn-line{color:var(--ink);border-color:rgba(0,0,0,.35)}
 .mega-logo{opacity:1}
 .about figure .cap{position:static;background:none;color:var(--ink-2);padding:10px 0 0;border-radius:0;font:400 .92rem/1.4 var(--sans)}
 .about p a{color:inherit}
+
+@media (prefers-reduced-motion:no-preference){
+  .hero .logo{animation:logoIn 1.1s cubic-bezier(.2,.7,.2,1) both}
+  .hero .sub{animation:fadeIn .8s .45s both}
+  .hero-meta{animation:fadeIn .8s .65s both}
+}
+@keyframes logoIn{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
 </style>
 </head>
 <body>
@@ -658,6 +666,7 @@ footer .btn-line{color:var(--ink);border-color:rgba(0,0,0,.35)}
   </div>
   <div class="strip" tabindex="0" aria-label="Galería de trabajos, desliza horizontalmente">
     <figure><button data-full="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima.jpg" data-cap="Francesa negra con estrellas doradas"><picture><source type="image/webp" srcset="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima-640.webp"><img src="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima-640.jpg" width="640" height="780" loading="lazy" decoding="async" alt="Uñas almendradas largas nude con francesa negra, estrellas doradas y cristales"></picture></button><figcaption>Francesa negra con estrellas doradas</figcaption></figure>
+    <figure><button data-full="img/manicure-nude-perlado-lunares-fucsia-lima.jpg" data-cap="Nude perlado con lunares fucsia"><picture><source type="image/webp" srcset="img/manicure-nude-perlado-lunares-fucsia-lima-640.webp"><img src="img/manicure-nude-perlado-lunares-fucsia-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Uñas cortas nude perlado con lunares fucsia y francesa fina fucsia"></picture></button><figcaption>Nude perlado con lunares fucsia</figcaption></figure>
     <figure><button data-full="img/unas-soft-gel-lunares-celeste-flor-3d-lima.jpg" data-cap="Celeste con flor 3D y lunares"><picture><source type="image/webp" srcset="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.webp"><img src="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Uñas almendradas celeste con lunares negros, flor blanca en 3D, francesa blanca y estrella dorada con cristales"></picture></button><figcaption>Celeste con flor 3D y lunares</figcaption></figure>
     <figure><button data-full="img/unas-almendradas-rosa-lunares-rayas-lima.jpg" data-cap="Rosa con lunares y rayitas"><picture><source type="image/webp" srcset="img/unas-almendradas-rosa-lunares-rayas-lima-640.webp"><img src="img/unas-almendradas-rosa-lunares-rayas-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Uñas stiletto y almendra rosa con lunares, puntas de rayas celeste, rosa y vino, flor 3D y estrellas doradas"></picture></button><figcaption>Rosa con lunares y rayitas</figcaption></figure>
     <figure><button data-full="img/manicure-rojo-lunares-blancos-lima.jpg" data-cap="Rojo con lunares blancos"><picture><source type="image/webp" srcset="img/manicure-rojo-lunares-blancos-lima-640.webp"><img src="img/manicure-rojo-lunares-blancos-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Manicure rojo cereza con lunares blancos, francesa roja y flores doradas en uñas cortas redondeadas"></picture></button><figcaption>Rojo con lunares blancos</figcaption></figure>
