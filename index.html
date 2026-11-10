@@ -605,6 +605,15 @@ footer .btn-line{color:var(--ink);border-color:rgba(0,0,0,.35)}
 }
 @keyframes logoIn{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* portada: contenido centrado en su mitad (escritorio) */
+@media (min-width:900px){
+  .hero-in{grid-column:1;grid-row:1;align-self:center;justify-self:center;width:100%;max-width:620px;text-align:center;padding:96px 40px 40px}
+  .hero .logo{display:block;margin:0 auto;width:min(26vw,42vh,440px);min-width:220px}
+  .hero .sub{max-width:none;margin-top:18px}
+  .hero-meta{align-items:center}
+  .hero-meta p{max-width:34em;margin:0 auto}
+}
 </style>
 </head>
 <body>
