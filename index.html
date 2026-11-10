@@ -62,6 +62,10 @@
         },
         {
           "@type": "AdministrativeArea",
+          "name": "San Miguel"
+        },
+        {
+          "@type": "AdministrativeArea",
           "name": "Miraflores"
         },
         {
@@ -243,7 +247,7 @@
           "name": "¿A qué distritos de Lima vas?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Hago uñas a domicilio en Miraflores, San Isidro, Santiago de Surco, San Borja, Barranco, Jesús María, Lince y Magdalena del Mar. Si estás en otro distrito, escríbeme igual por WhatsApp y lo vemos."
+            "text": "Hago uñas a domicilio en San Miguel, Miraflores, San Isidro, Santiago de Surco, San Borja, Barranco, Jesús María, Lince y Magdalena del Mar. Si estás en otro distrito, escríbeme igual por WhatsApp y lo vemos."
           }
         },
         {
@@ -276,6 +280,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "El soft gel es el más ligero. El builder refuerza tu propia uña sin alargarla mucho. El poly gel es resistente y liviano. El acrílico aguanta los largos extremos y el stiletto. Si no sabes, cuéntame cómo están tus uñas y te recomiendo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cobras movilidad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En San Miguel la movilidad está incluida. En los demás distritos tiene un costo adicional según la zona, y te lo digo al cotizar, junto con el precio del servicio."
           }
         },
         {
@@ -485,7 +497,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
     <p class="intro">Hola, soy Jessie. Hago soft gel, builder, poly gel y acrílico, y voy hasta tu casa con todo lo necesario. Me mandas la foto del diseño que quieres y te digo cuánto sale.</p>
     <div class="actions">
       <a class="btn btn-light" data-wa="Hola Jessie, quiero sacar una cita para uñas" href="#reservar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Escríbeme por WhatsApp</a>
-      <p class="where">Atiendo en Miraflores, San Isidro, Surco y más distritos, de lunes a domingo.</p>
+      <p class="where">Movilidad incluida en San Miguel. También voy a Miraflores, San Isidro, Surco y más distritos, de lunes a domingo.</p>
     </div>
   </div>
   <figure class="hero-photo">
@@ -500,7 +512,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
   <div class="wrap">
     <div class="head">
       <h2 id="h-precios">Precios</h2>
-      <p>Son precios desde, en soles. Todo incluye limado, cutícula y color entero o francesa. El diseño se suma por cada uña que lo lleve, así que mándame tu foto de referencia y te paso el total antes de ir.</p>
+      <p>Son precios desde, en soles. Todo incluye limado, cutícula y color entero o francesa. El diseño se suma por cada uña que lo lleve. La movilidad está incluida en San Miguel; en otros distritos tiene un costo adicional. Mándame tu foto de referencia y te paso el total antes de ir.</p>
     </div>
     <ul class="svc-list">
 <li class="svc"><h3>Soft gel</h3><p>Uñas largas que pesan poco. Duran de 3 a 4 semanas.</p><span class="pr"><small>desde</small>S/ 90</span><a class="link ask" data-wa="Hola Jessie, quiero cotizar soft gel. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
@@ -575,7 +587,8 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
   <div class="wrap book-grid">
     <div id="zonas">
       <h2>¿Dónde atiendo?</h2>
-      <p class="muted">Miraflores, San Isidro, Santiago de Surco, San Borja, Barranco, Jesús María, Lince y Magdalena del Mar. Si estás en otro distrito, escríbeme igual y lo vemos.</p>
+      <p class="muted">San Miguel, Miraflores, San Isidro, Santiago de Surco, San Borja, Barranco, Jesús María, Lince y Magdalena del Mar. Si estás en otro distrito, escríbeme igual y lo vemos.</p>
+      <p class="muted" style="margin-top:12px">En San Miguel la movilidad está incluida. En los demás distritos tiene un costo adicional según la zona, y te lo digo al cotizar.</p>
     </div>
     <div>
       <h2 id="h-res">¿Cómo reservo?</h2>
@@ -593,11 +606,12 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
   <div class="wrap faq-in">
     <h2 id="h-faq">Preguntas</h2>
     <div>
-      <details open><summary>¿A qué distritos de Lima vas?</summary><p>Hago uñas a domicilio en Miraflores, San Isidro, Santiago de Surco, San Borja, Barranco, Jesús María, Lince y Magdalena del Mar. Si estás en otro distrito, escríbeme igual por WhatsApp y lo vemos.</p></details>
+      <details open><summary>¿A qué distritos de Lima vas?</summary><p>Hago uñas a domicilio en San Miguel, Miraflores, San Isidro, Santiago de Surco, San Borja, Barranco, Jesús María, Lince y Magdalena del Mar. Si estás en otro distrito, escríbeme igual por WhatsApp y lo vemos.</p></details>
       <details><summary>¿Cuánto cuesta el soft gel a domicilio?</summary><p>En Rare Nail It el soft gel está desde S/ 90 con color entero o francesa. Si quieres diseño, se suma desde S/ 10 por cada uña con diseño. Mándame tu foto de referencia y te paso el total antes de ir.</p></details>
       <details><summary>¿Cuánto duran las uñas?</summary><p>Soft gel, builder, poly gel y acrílico duran entre 3 y 4 semanas con buen cuidado. Después toca relleno o retiro, para cuidar tu uña natural.</p></details>
       <details><summary>¿Cuánto demora la cita?</summary><p>Entre hora y media y dos horas y media, según la técnica, el largo y el diseño.</p></details>
       <details><summary>¿Qué técnica me conviene?</summary><p>El soft gel es el más ligero. El builder refuerza tu propia uña sin alargarla mucho. El poly gel es resistente y liviano. El acrílico aguanta los largos extremos y el stiletto. Si no sabes, cuéntame cómo están tus uñas y te recomiendo.</p></details>
+      <details><summary>¿Cobras movilidad?</summary><p>En San Miguel la movilidad está incluida. En los demás distritos tiene un costo adicional según la zona, y te lo digo al cotizar, junto con el precio del servicio.</p></details>
       <details><summary>¿Atiendes sábados y domingos?</summary><p>Sí, atiendo de lunes a domingo de 9 a. m. a 8 p. m., siempre con cita.</p></details>
       <details><summary>¿Cómo te pago?</summary><p>Con Yape, Plin, efectivo o transferencia.</p></details>
     </div>
