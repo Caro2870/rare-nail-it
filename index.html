@@ -21,13 +21,13 @@
 <meta property="og:title" content="Rare Nail It · Uñas a domicilio en Lima">
 <meta property="og:description" content="Soft gel, builder, poly gel y acrílico con diseños únicos. Atención a domicilio en Lima. Reserva por WhatsApp.">
 <meta property="og:url" content="https://caro2870.github.io/rare-nail-it/">
-<meta property="og:image" content="https://caro2870.github.io/rare-nail-it/img/unas-acrilicas-francesa-negra-estrellas-doradas-lima.jpg">
+<meta property="og:image" content="https://caro2870.github.io/rare-nail-it/img/hero-unas-francesa-negra-estrellas-doradas-lima.jpg">
 <meta property="og:image:alt" content="Uñas almendradas nude con punta negra y estrellas doradas hechas por Rare Nail It en Lima">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preload" as="image" href="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima-640.webp" imagesrcset="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima-640.webp 640w, img/unas-acrilicas-francesa-negra-estrellas-doradas-lima.webp 1200w" imagesizes="100vw" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-unas-francesa-negra-estrellas-doradas-lima-1000.webp" imagesrcset="img/hero-unas-francesa-negra-estrellas-doradas-lima-1000.webp 1000w, img/hero-unas-francesa-negra-estrellas-doradas-lima.webp 1598w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -167,6 +167,19 @@ em{font-family:var(--it);font-style:italic;font-weight:400}
 .badge .core small{display:block;font:500 .58rem/1.4 var(--sans);letter-spacing:.2em;margin-top:4px;color:var(--gold)}
 @keyframes spin{to{transform:rotate(360deg)}}
 
+
+@media (min-width:900px){
+  .hero{grid-template-columns:1fr 1fr;background:radial-gradient(ellipse at 15% 20%,rgba(139,74,36,.55),transparent 55%),radial-gradient(ellipse at 40% 100%,rgba(118,97,42,.45),transparent 55%),var(--night)}
+  .hero picture{position:relative;inset:auto;grid-column:2;grid-row:1;min-height:100svh}
+  .hero picture img.bg{position:absolute;inset:0;object-position:50% 50%}
+  .hero::before{background:linear-gradient(90deg,var(--night) 0%,rgba(26,19,16,0) 18%),linear-gradient(180deg,rgba(26,19,16,.45),transparent 25%);left:50%}
+  .hero-in{grid-column:1/3;grid-row:1;padding-top:120px}
+  .hero .word{font-size:clamp(5rem,13.5vw,15rem)}
+  .hero .word:last-child{text-align:left;padding-left:.35em}
+  .hero .sub,.hero-meta p{max-width:min(30em,40vw)}
+  .badge{left:calc(50% - clamp(56px,6.5vw,75px));right:auto;top:clamp(110px,18vh,180px)}
+}
+
 /* MARQUEE */
 .marquee{background:var(--grad);color:var(--cream);overflow:hidden;white-space:nowrap;padding:18px 0;border-block:1px solid rgba(0,0,0,.15)}
 .marquee .track{display:inline-flex;gap:0;animation:mq 32s linear infinite}
@@ -256,6 +269,19 @@ th,td{text-align:left;padding:20px 16px 20px 0;border-bottom:1px solid var(--lin
 thead th{font:500 .7rem/1.3 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);border-bottom:1px solid var(--ink)}
 tbody th{font:400 1.5rem/1.1 var(--display);white-space:nowrap}
 tbody td:last-child{font-family:var(--display);font-size:1.25rem;white-space:nowrap}
+
+
+@media (max-width:700px){
+  table{min-width:0}
+  thead{display:none}
+  caption{display:block;width:100%;padding:0 0 8px}
+  table,tbody,tr,th,td{display:block;width:100%}
+  tbody tr{border-bottom:1px solid var(--line);padding:16px 0}
+  tbody th{border:0;padding:0 0 8px}
+  tbody td{border:0;padding:2px 0;display:flex;justify-content:space-between;gap:12px}
+  tbody td::before{content:attr(data-l);font:500 .7rem/1.6 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2)}
+  tbody td:last-child{font-size:1.1rem}
+}
 
 /* ABOUT */
 .about{background:var(--paper-2);padding:clamp(80px,10vw,140px) var(--pad)}
@@ -356,8 +382,8 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:46px;height:46px;border-ra
 <!-- HERO -->
 <section class="hero" aria-labelledby="h1">
   <picture>
-    <source type="image/webp" srcset="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima-640.webp 640w, img/unas-acrilicas-francesa-negra-estrellas-doradas-lima.webp 1200w" sizes="100vw">
-    <img class="bg" src="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima.jpg" width="1200" height="1462" fetchpriority="high" decoding="async" alt="Uñas almendradas largas en tono nude con punta francesa negra y estrellas doradas con cristales, hechas por Rare Nail It en Lima">
+    <source type="image/webp" srcset="img/hero-unas-francesa-negra-estrellas-doradas-lima-1000.webp 1000w, img/hero-unas-francesa-negra-estrellas-doradas-lima.webp 1598w" sizes="(min-width: 900px) 50vw, 100vw">
+    <img class="bg" src="img/hero-unas-francesa-negra-estrellas-doradas-lima.jpg" srcset="img/hero-unas-francesa-negra-estrellas-doradas-lima-1000.jpg 1000w, img/hero-unas-francesa-negra-estrellas-doradas-lima.jpg 1598w" sizes="(min-width: 900px) 50vw, 100vw" width="1598" height="1600" fetchpriority="high" decoding="async" alt="Uñas almendradas largas en tono nude con punta francesa negra y estrellas doradas con cristales, hechas por Rare Nail It en Lima">
   </picture>
 
   <a class="badge" data-wa="Hola Rare Nail It ✨ quiero reservar una cita a domicilio" href="#reservar" aria-label="Reservar cita a domicilio por WhatsApp">
@@ -376,7 +402,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:46px;height:46px;border-ra
     </h1>
     <div class="hero-meta">
       <p>Rare Nail It es un servicio de manicure a domicilio en Lima, Perú. Llevo el estudio a tu casa: estrellas doradas, flores 3D, lunares y francesas que nadie más tiene.</p>
-      <span class="label">Lima · Perú — Est. 2026</span>
+      <span class="label">Lima · Perú — a domicilio</span>
     </div>
   </div>
 </section>
@@ -391,7 +417,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:46px;height:46px;border-ra
 
 <!-- STATEMENT -->
 <section class="statement" aria-labelledby="h-st">
-  <p class="label rv">Manifiesto</p>
+  <p class="label rv">Mi estilo</p>
   <h2 id="h-st" class="rv">Uñas <em>raras</em>, en el mejor sentido. Detalles en relieve <span class="pill"><img src="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.jpg" width="640" height="800" loading="lazy" alt=""></span> brillo dorado <span class="pill"><img src="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima-640.jpg" width="640" height="800" loading="lazy" alt=""></span> y diseños pensados solo para ti, <em>sin salir de casa.</em></h2>
   <div class="statement-foot rv">
     <div><b>4</b>técnicas: soft gel, builder, poly gel y acrílico</div>
@@ -405,7 +431,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:46px;height:46px;border-ra
 <section class="services" id="servicios" aria-labelledby="h-serv">
   <div class="sec-top rv">
     <h2 id="h-serv">Servicios <em>&amp;</em> precios</h2>
-    <p>Todos incluyen preparación, cutícula, forma a tu gusto y un diseño sencillo. Precios referenciales en soles. Te confirmo el total por WhatsApp.</p>
+    <p>Todos incluyen preparación, cutícula, forma a tu gusto y un diseño sencillo (color entero o francesa en las 10 uñas). Precios referenciales en soles. Mándame tu foto de referencia y te paso el total exacto antes de la cita.</p>
   </div>
   <ul class="svc-list">
     <li class="svc rv" data-img="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.jpg"><span class="n">01</span><h3>Soft gel</h3><p>Extensiones ligeras, flexibles y naturales. Largo sin sentir peso. Duran de 3 a 4 semanas.</p><span class="pr"><small>desde</small>S/ 90</span></li>
@@ -426,13 +452,14 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:46px;height:46px;border-ra
     <p>Diseños reales hechos a domicilio en Lima. Desliza y toca para ampliar. Hay más en <a href="https://www.instagram.com/rare.nail.it/" target="_blank" rel="noopener">@rare.nail.it</a>.</p>
   </div>
   <div class="strip" tabindex="0" aria-label="Galería de trabajos, desliza horizontalmente">
-    <figure><button data-full="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima.jpg" data-cap="Nude con francesa negra y estrellas doradas"><picture><source type="image/webp" srcset="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima-640.webp"><img src="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima-640.jpg" width="640" height="780" loading="lazy" decoding="async" alt="Uñas acrílicas almendradas largas nude con francesa negra, estrellas doradas y cristales"></picture></button><figcaption><b>Noche dorada</b><span>Acrílico</span></figcaption></figure>
-    <figure><button data-full="img/unas-soft-gel-lunares-celeste-flor-3d-lima.jpg" data-cap="Celeste con lunares, flor 3D y estrellas doradas"><picture><source type="image/webp" srcset="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.webp"><img src="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Uñas almendradas celeste con lunares negros, flor blanca en 3D, francesa blanca y estrella dorada con cristales"></picture></button><figcaption><b>Flor de verano</b><span>Soft gel · 3D</span></figcaption></figure>
-    <figure><button data-full="img/unas-almendradas-rosa-lunares-rayas-lima.jpg" data-cap="Rosa con lunares, rayas de colores y flor 3D"><picture><source type="image/webp" srcset="img/unas-almendradas-rosa-lunares-rayas-lima-640.webp"><img src="img/unas-almendradas-rosa-lunares-rayas-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Uñas stiletto y almendra rosa con lunares, puntas de rayas celeste, rosa y vino, flor 3D y estrellas doradas"></picture></button><figcaption><b>Candy stripes</b><span>Poly gel</span></figcaption></figure>
-    <figure><button data-full="img/manicure-rojo-lunares-blancos-lima.jpg" data-cap="Rojo cereza con lunares blancos y flores doradas"><picture><source type="image/webp" srcset="img/manicure-rojo-lunares-blancos-lima-640.webp"><img src="img/manicure-rojo-lunares-blancos-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Manicure rojo cereza con lunares blancos, francesa roja y flores doradas en uñas cortas redondeadas"></picture></button><figcaption><b>Cereza</b><span>Builder</span></figcaption></figure>
-    <figure><button data-full="img/manicure-francesa-clasica-natural-lima.jpg" data-cap="Francesa clásica fina en uña natural"><picture><source type="image/webp" srcset="img/manicure-francesa-clasica-natural-lima-640.webp"><img src="img/manicure-francesa-clasica-natural-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Manicure francesa clásica con línea blanca fina sobre base rosada en uñas cortas cuadradas"></picture></button><figcaption><b>French micro</b><span>Builder</span></figcaption></figure>
+    <figure><button data-full="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima.jpg" data-cap="Nude con francesa negra y estrellas doradas"><picture><source type="image/webp" srcset="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima-640.webp"><img src="img/unas-acrilicas-francesa-negra-estrellas-doradas-lima-640.jpg" width="640" height="780" loading="lazy" decoding="async" alt="Uñas acrílicas almendradas largas nude con francesa negra, estrellas doradas y cristales"></picture></button><figcaption><b>Estrellas doradas</b><span>Acrílico</span></figcaption></figure>
+    <figure><button data-full="img/unas-soft-gel-lunares-celeste-flor-3d-lima.jpg" data-cap="Celeste con lunares, flor 3D y estrellas doradas"><picture><source type="image/webp" srcset="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.webp"><img src="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Uñas almendradas celeste con lunares negros, flor blanca en 3D, francesa blanca y estrella dorada con cristales"></picture></button><figcaption><b>Flor 3D celeste</b><span>Soft gel · 3D</span></figcaption></figure>
+    <figure><button data-full="img/unas-almendradas-rosa-lunares-rayas-lima.jpg" data-cap="Rosa con lunares, rayas de colores y flor 3D"><picture><source type="image/webp" srcset="img/unas-almendradas-rosa-lunares-rayas-lima-640.webp"><img src="img/unas-almendradas-rosa-lunares-rayas-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Uñas stiletto y almendra rosa con lunares, puntas de rayas celeste, rosa y vino, flor 3D y estrellas doradas"></picture></button><figcaption><b>Rayitas de colores</b><span>Poly gel</span></figcaption></figure>
+    <figure><button data-full="img/manicure-rojo-lunares-blancos-lima.jpg" data-cap="Rojo cereza con lunares blancos y flores doradas"><picture><source type="image/webp" srcset="img/manicure-rojo-lunares-blancos-lima-640.webp"><img src="img/manicure-rojo-lunares-blancos-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Manicure rojo cereza con lunares blancos, francesa roja y flores doradas en uñas cortas redondeadas"></picture></button><figcaption><b>Rojo con lunares</b><span>Builder</span></figcaption></figure>
+    <figure><button data-full="img/manicure-francesa-clasica-natural-lima.jpg" data-cap="Francesa clásica fina en uña natural"><picture><source type="image/webp" srcset="img/manicure-francesa-clasica-natural-lima-640.webp"><img src="img/manicure-francesa-clasica-natural-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Manicure francesa clásica con línea blanca fina sobre base rosada en uñas cortas cuadradas"></picture></button><figcaption><b>Francesa fina</b><span>Builder</span></figcaption></figure>
   </div>
   <p class="strip-hint">← desliza →</p>
+  <p style="padding:20px var(--pad) 0;margin:0"><a class="btn btn-line" href="https://www.instagram.com/rare.nail.it/" target="_blank" rel="noopener">Ver más trabajos en Instagram</a></p>
 </section>
 
 <!-- HOTSPOTS DETAIL -->
@@ -446,7 +473,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:46px;height:46px;border-ra
     <div class="spot-tip" hidden></div>
   </div>
   <div class="rv">
-    <p class="label">Anatomía de un set</p>
+    <p class="label">Así se hace un set</p>
     <h2 id="h-det">Cada uña cuenta <em>su propia historia</em></h2>
     <p style="color:var(--ink-2)">Un set de Rare Nail It mezcla técnicas en una misma mano. Toca los puntos para ver cómo se construye este diseño.</p>
     <ol id="spot-list">
@@ -469,10 +496,10 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:46px;height:46px;border-ra
       <caption>Comparativa de técnicas de uñas · Rare Nail It, Lima</caption>
       <thead><tr><th scope="col">Técnica</th><th scope="col">Ideal para</th><th scope="col">Largo</th><th scope="col">Sensación</th><th scope="col">Duración</th><th scope="col">Desde</th></tr></thead>
       <tbody>
-        <tr><th scope="row">Soft gel</th><td>Look natural y ligero</td><td>Corto a largo</td><td>Muy liviana y flexible</td><td>3–4 semanas</td><td>S/ 90</td></tr>
-        <tr><th scope="row">Builder</th><td>Fortalecer tu uña natural</td><td>Corto a medio</td><td>Natural, como tu uña</td><td>3–4 semanas</td><td>S/ 80</td></tr>
-        <tr><th scope="row">Poly gel</th><td>Resistencia sin peso</td><td>Medio a largo</td><td>Liviana y firme</td><td>3–4 semanas</td><td>S/ 100</td></tr>
-        <tr><th scope="row">Acrílico</th><td>Largos extremos y stiletto</td><td>Largo a extra largo</td><td>La más resistente</td><td>3–4 semanas</td><td>S/ 110</td></tr>
+        <tr><th scope="row">Soft gel</th><td data-l="Ideal para">Look natural y ligero</td><td data-l="Largo">Corto a largo</td><td data-l="Sensación">Muy liviana y flexible</td><td data-l="Duración">3–4 semanas</td><td data-l="Desde">S/ 90</td></tr>
+        <tr><th scope="row">Builder</th><td data-l="Ideal para">Fortalecer tu uña natural</td><td data-l="Largo">Corto a medio</td><td data-l="Sensación">Natural, como tu uña</td><td data-l="Duración">3–4 semanas</td><td data-l="Desde">S/ 80</td></tr>
+        <tr><th scope="row">Poly gel</th><td data-l="Ideal para">Resistencia sin peso</td><td data-l="Largo">Medio a largo</td><td data-l="Sensación">Liviana y firme</td><td data-l="Duración">3–4 semanas</td><td data-l="Desde">S/ 100</td></tr>
+        <tr><th scope="row">Acrílico</th><td data-l="Ideal para">Largos extremos y stiletto</td><td data-l="Largo">Largo a extra largo</td><td data-l="Sensación">La más resistente</td><td data-l="Duración">3–4 semanas</td><td data-l="Desde">S/ 110</td></tr>
       </tbody>
     </table>
   </div>
@@ -491,7 +518,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:46px;height:46px;border-ra
       <p>Soy la nail artist detrás de Rare Nail It. Hago cada set a mano y a domicilio para que no pierdas tiempo en tráfico ni en salas de espera. Me obsesionan los detalles: una estrella dorada en el lugar justo, una flor en relieve, una francesa con color. Mi meta es que tus uñas sean <em>rare</em>: únicas y tuyas.</p>
       <div class="vals">
         <div><b>A domicilio</b><span>Casa u oficina, con todo el equipo.</span></div>
-        <div><b>Higiene primero</b><span>Herramientas desinfectadas, limas de un solo uso.</span></div>
+        <div><b>Higiene primero</b><span>Herramientas desinfectadas en cada cita; limas y palitos nuevos solo para ti.</span></div>
         <div><b>Materiales pro</b><span>Geles y acrílicos que cuidan tu uña natural.</span></div>
         <div><b>A tu medida</b><span>Tráeme tu referencia o la creamos juntas.</span></div>
       </div>
@@ -507,7 +534,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:46px;height:46px;border-ra
   <ol class="steps">
     <li class="rv"><h3>Escríbeme</h3><p>Mándame un WhatsApp con la técnica que quieres y una foto de referencia.</p></li>
     <li class="rv"><h3>Elige día y hora</h3><p>Te confirmo el precio final, la fecha y tu dirección en Lima.</p></li>
-    <li class="rv"><h3>Relájate</h3><p>Llego con todo el equipo. Tú solo eliges la música.</p></li>
+    <li class="rv"><h3>Relájate</h3><p>Llego puntual con todo el equipo. Solo necesito una mesa con buena luz y un enchufe cerca.</p></li>
   </ol>
 </section>
 
