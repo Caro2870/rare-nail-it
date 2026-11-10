@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="preload" as="image" href="img/hero-unas-francesa-negra-estrellas-doradas-lima-1200.webp" imagesrcset="img/hero-unas-francesa-negra-estrellas-doradas-lima-1000.webp 1000w, img/hero-unas-francesa-negra-estrellas-doradas-lima-1200.webp 1200w, img/hero-unas-francesa-negra-estrellas-doradas-lima.webp 1598w" imagesizes="(min-width: 900px) 50vw, 100vw" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-unas-francesa-negra-estrellas-doradas-lima-1200.webp" imagesrcset="img/hero-unas-francesa-negra-estrellas-doradas-lima-1000.webp 1000w, img/hero-unas-francesa-negra-estrellas-doradas-lima-1200.webp 1200w, img/hero-unas-francesa-negra-estrellas-doradas-lima.webp 1598w" imagesizes="(min-width: 900px) 34vw, 100vw" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
@@ -42,8 +42,8 @@
       "url": "https://caro2870.github.io/rare-nail-it/",
       "image": [
         "https://caro2870.github.io/rare-nail-it/img/hero-unas-francesa-negra-estrellas-doradas-lima.jpg",
-        "https://caro2870.github.io/rare-nail-it/img/unas-soft-gel-lunares-celeste-flor-3d-lima.jpg",
-        "https://caro2870.github.io/rare-nail-it/img/manicure-nude-perlado-lunares-fucsia-lima.jpg"
+        "https://caro2870.github.io/rare-nail-it/img/manicure-rojo-lunares-blancos-lima.jpg",
+        "https://caro2870.github.io/rare-nail-it/img/unas-almendradas-rosa-lunares-rayas-lima.jpg"
       ],
       "logo": "https://caro2870.github.io/rare-nail-it/img/logo-512.png",
       "priceRange": "S/ 80 – S/ 110 por set",
@@ -149,7 +149,7 @@
             "itemOffered": {
               "@type": "Service",
               "name": "Soft gel",
-              "description": "Uñas largas que pesan poco. Duran de 3 a 4 semanas."
+              "description": "Ligeras y naturales, cortas o largas. Duran de 3 a 4 semanas."
             },
             "priceSpecification": {
               "@type": "UnitPriceSpecification",
@@ -191,7 +191,7 @@
             "itemOffered": {
               "@type": "Service",
               "name": "Acrílico",
-              "description": "Para largos de verdad, stiletto o coffin."
+              "description": "El más resistente, para uñas muy largas, stiletto o coffin."
             },
             "priceSpecification": {
               "@type": "UnitPriceSpecification",
@@ -205,7 +205,7 @@
             "itemOffered": {
               "@type": "Service",
               "name": "Diseños y 3D",
-              "description": "Flores en relieve, piedras, estrellas, lunares. Se cobra por cada uña con diseño."
+              "description": "Flores en relieve, piedras, estrellas, lunares. Desde S/ 10 por cada uña con diseño."
             },
             "priceSpecification": {
               "@type": "UnitPriceSpecification",
@@ -299,7 +299,7 @@
           "name": "¿Cómo separo mi cita?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Para separar tu cita te pido un adelanto de S/ 20 por Yape o Plin, que se descuenta del total. Te espero hasta 15 minutos. Si necesitas cancelar o cambiar la cita, avísame con al menos 12 horas de anticipación y la reprogramamos sin costo una vez. Si cancelas con menos tiempo o no estás cuando llego, el adelanto no se devuelve. Y si yo llego más de 15 minutos tarde, te descuento S/ 10."
+            "text": "Con un adelanto de S/ 20 por Yape o Plin, que se descuenta del total. Te espero hasta 15 minutos, y si yo llego más de 15 minutos tarde, te descuento S/ 10. Las reglas de cambio y cancelación están en la política de reserva, en la sección Cómo reservo."
           }
         },
         {
@@ -361,9 +361,9 @@ p{margin:0}
 .top{position:fixed;inset:0 0 auto 0;z-index:60}
 .promo{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--brown);color:#fdf9f7;padding:8px 48px 8px var(--pad);position:relative;font-size:.95rem;text-align:center}
 .promo p{margin:0}
-@media (max-width:600px){.promo{font-size:.86rem;padding-top:6px;padding-bottom:6px}}
+@media (max-width:600px){.promo{font-size:.82rem;padding-top:6px;padding-bottom:6px;padding-right:52px}.promo-go .full{display:none}}
 .promo-go{color:#fff;font-weight:500;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
-.promo-x{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:40px;height:40px;border:0;background:transparent;color:#fdf9f7;font-size:1.4rem;cursor:pointer}
+.promo-x{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:48px;height:48px;border:0;background:transparent;color:#fdf9f7;font-size:1.4rem;cursor:pointer}
 /* nav */
 .nav{display:flex;justify-content:space-between;align-items:center;padding:12px var(--pad);background:rgba(253,249,247,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav .mark{font:500 1.3rem/1 var(--serif);text-decoration:none}
@@ -375,12 +375,14 @@ p{margin:0}
 /* portada: celular = panel de marca + foto debajo; escritorio = mitad y mitad */
 .hero{display:grid;padding-top:var(--top,62px)}
 .hero-panel{background:var(--grad);color:#fdf9f7;padding:36px var(--pad) 40px;text-align:center}
-.hero .logo{display:block;margin:0 auto;width:min(64vw,36svh,320px);height:auto}
+.hero .logo{display:block;margin:0 auto;width:min(52vw,28svh,280px);height:auto}
 .hero h1 .sub{display:block;font:500 clamp(1.5rem,4.8vw,2.1rem)/1.15 var(--serif);margin-top:16px}
 .hero h1 .sub2{display:block;font:500 1rem/1.4 var(--sans);margin-top:6px;color:#f6ece6}
 .hero .intro{max-width:32em;margin:12px auto 0;color:#f6ece6}
 .hero .actions{margin-top:22px;display:flex;flex-direction:column;align-items:center;gap:12px}
-.hero .where{font-size:.95rem;color:#f6ece6;max-width:30em}
+.hero .trust{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 18px;font-size:.92rem;color:#f6ece6}
+.hero .trust a{color:#fff}
+.hero-panel :focus-visible,.promo :focus-visible{outline-color:#fff}
 .hero-photo{margin:0;background:#2a1a12}
 .hero-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
 .hero-photo .mini{display:none}
@@ -410,6 +412,7 @@ p{margin:0}
 .svc p{color:var(--ink-2)}
 .svc .pr{font:600 1.6rem/1 var(--serif);white-space:nowrap}
 .svc .pr small{font:400 .85rem var(--sans);color:var(--ink-2);margin-right:6px}
+.svc .pr small.per{margin:0 0 0 6px}
 .svc .ask{font-size:.95rem;white-space:nowrap;padding:12px 0}
 @media (max-width:860px){
   .svc{grid-template-columns:1fr auto}
@@ -428,16 +431,6 @@ p{margin:0}
 .strip figcaption{margin-top:10px;color:var(--ink-2);font-size:.95rem}
 .below{padding:16px var(--pad) 0}
 
-/* comparativa */
-.tw{overflow-x:auto}
-table{width:100%;border-collapse:collapse}
-caption{caption-side:bottom;text-align:left;color:var(--ink-2);font-size:.85rem;padding-top:12px}
-th,td{text-align:left;padding:16px 16px 16px 0;border-bottom:1px solid var(--line);vertical-align:top}
-thead th{font:500 .9rem/1.3 var(--sans);color:var(--ink-2);border-bottom:1px solid var(--ink)}
-tbody th{font:500 1.35rem/1.15 var(--serif);white-space:nowrap}
-td:last-child{font:600 1.15rem var(--serif);white-space:nowrap}
-@media (max-width:600px){th,td{padding-right:10px;font-size:.92rem}tbody th{font-size:1.15rem}}
-
 /* sobre mí */
 .about-in{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,6vw,90px);align-items:center}
 .about figure{margin:0}
@@ -450,35 +443,28 @@ td:last-child{font:600 1.15rem var(--serif);white-space:nowrap}
 .facts li{margin:.35em 0}
 @media (max-width:860px){.about-in{grid-template-columns:1fr}.about figure{max-width:440px}}
 
-/* regalar y recomendar */
-.share-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,90px)}
-.share h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:14px}
-.share .btn{margin-top:22px}
-@media (max-width:760px){.share-grid{grid-template-columns:1fr}}
 /* reservar */
 .zones{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .zones li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
 .zones b{font-weight:500}
-.zones span{color:var(--ink-2);text-align:right}
-.zones span{white-space:nowrap;flex-shrink:0}
+.zones span{color:var(--ink-2);text-align:right;white-space:nowrap;flex-shrink:0}
 .zones small{display:block;font-size:.82rem;white-space:normal}
-.policy p{color:var(--ink-2)}
 .policy{margin-top:26px;padding:18px 20px;background:var(--nude);border-radius:4px}
 .policy h3{font-size:1.4rem;margin-bottom:8px}
 .policy ul{margin:0;padding-left:1.1em;color:var(--ink-2)}
 .policy li{margin:.35em 0}
 .hyg{margin-top:18px;color:var(--ink-2);font-size:.95rem}
-mark.tbd{background:#ffe58a;color:#000;padding:0 3px;border-radius:2px}
 .rev-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .rev{background:var(--nude);padding:20px;border-radius:4px}
 .rev p{font:500 1.25rem/1.3 var(--serif);margin-bottom:10px}
 .rev span{color:var(--ink-2);font-size:.92rem}
-.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,90px)}
+.zones-block{margin-top:40px;max-width:720px}
+.zones-block h3{margin-bottom:12px}
+.book-in{max-width:760px}
 .book h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:14px}
 .steps{margin:0;padding-left:1.2em;color:var(--ink-2)}
 .steps li{margin:.5em 0;padding-left:.3em}
 .book .btn{margin-top:22px}
-@media (max-width:760px){.book-grid{grid-template-columns:1fr}}
 
 /* faq */
 .faq-in{display:grid;grid-template-columns:4fr 8fr;gap:clamp(24px,5vw,80px)}
@@ -492,7 +478,8 @@ mark.tbd{background:#ffe58a;color:#000;padding:0 3px;border-radius:2px}
 @media (max-width:860px){.faq-in{grid-template-columns:1fr}}
 
 /* pie */
-footer{background:var(--nude);padding:var(--sec) 0 28px}
+footer{background:var(--paper);padding:var(--sec) 0 28px;border-top:1px solid var(--line)}
+.gift{margin-top:14px;color:var(--ink-2)}
 .foot-cta{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
 .foot-cta h2{font-size:clamp(2.2rem,5vw,4.2rem)}
 .foot-btns{display:flex;gap:12px;flex-wrap:wrap}
@@ -522,7 +509,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
 
 <header class="top" id="top">
   <div class="promo" id="promo" hidden role="region" aria-label="Promoción">
-    <p><span id="promo-txt"></span> <a class="promo-go" id="promo-go" href="#reservar">Pedir por WhatsApp</a></p>
+    <p><span id="promo-txt"></span> <a class="promo-go" id="promo-go" href="#reservar">Pedir<span class="full"> por WhatsApp</span></a></p>
     <button type="button" class="promo-x" id="promo-x" aria-label="Cerrar promoción">×</button>
   </div>
   <div class="nav">
@@ -550,35 +537,22 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
     <p class="intro">Hola, soy Jessie. Hago soft gel, builder, poly gel y acrílico, y voy hasta tu casa con todo lo necesario. Me mandas la foto del diseño que quieres y te digo cuánto sale.</p>
     <div class="actions">
       <a class="btn btn-light" data-wa="Hola Jessie, quiero cotizar un diseño. Te mando mi foto de referencia." href="#reservar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Cotiza tu diseño por WhatsApp</a>
-      <p class="where">Movilidad incluida en San Miguel. También voy a Pueblo Libre, Magdalena, Jesús María, Lince y más distritos, de lunes a domingo.</p>
+      <ul class="trust">
+        <li>Movilidad incluida en San Miguel</li>
+        <li>Limas y palitos nuevos para cada clienta</li>
+        <li>Te paso el total antes de ir</li>
+      </ul>
+      <a class="link" style="color:#fff;font-size:.92rem" href="#zonas">Ver movilidad a otros distritos</a>
     </div>
   </div>
   <figure class="hero-photo">
     <picture class="main">
-      <source type="image/webp" srcset="img/hero-unas-francesa-negra-estrellas-doradas-lima-1000.webp 1000w, img/hero-unas-francesa-negra-estrellas-doradas-lima-1200.webp 1200w, img/hero-unas-francesa-negra-estrellas-doradas-lima.webp 1598w" sizes="(min-width: 900px) 50vw, 100vw">
-      <img src="img/hero-unas-francesa-negra-estrellas-doradas-lima-1200.jpg" srcset="img/hero-unas-francesa-negra-estrellas-doradas-lima-1000.jpg 1000w, img/hero-unas-francesa-negra-estrellas-doradas-lima-1200.jpg 1200w, img/hero-unas-francesa-negra-estrellas-doradas-lima.jpg 1598w" sizes="(min-width: 900px) 50vw, 100vw" width="1200" height="1201" fetchpriority="high" alt="Uñas almendradas largas en tono nude con punta francesa negra y estrellas doradas con cristales, hechas por Rare Nail It en Lima">
+      <source type="image/webp" srcset="img/hero-unas-francesa-negra-estrellas-doradas-lima-1000.webp 1000w, img/hero-unas-francesa-negra-estrellas-doradas-lima-1200.webp 1200w, img/hero-unas-francesa-negra-estrellas-doradas-lima.webp 1598w" sizes="(min-width: 900px) 34vw, 100vw">
+      <img src="img/hero-unas-francesa-negra-estrellas-doradas-lima-1200.jpg" srcset="img/hero-unas-francesa-negra-estrellas-doradas-lima-1000.jpg 1000w, img/hero-unas-francesa-negra-estrellas-doradas-lima-1200.jpg 1200w, img/hero-unas-francesa-negra-estrellas-doradas-lima.jpg 1598w" sizes="(min-width: 900px) 34vw, 100vw" width="1200" height="1201" fetchpriority="high" alt="Uñas almendradas largas en tono nude con punta francesa negra y estrellas doradas con cristales, hechas por Rare Nail It en Lima">
     </picture>
     <picture class="mini"><source type="image/webp" srcset="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.webp"><img src="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Uñas celeste con lunares y flor blanca en 3D"></picture>
     <picture class="mini"><source type="image/webp" srcset="img/manicure-nude-perlado-lunares-fucsia-lima-640.webp"><img src="img/manicure-nude-perlado-lunares-fucsia-lima-640.jpg" width="640" height="800" loading="lazy" decoding="async" alt="Uñas cortas nude perlado con lunares fucsia"></picture>
   </figure>
-</section>
-
-<section class="sec" id="precios" aria-labelledby="h-precios">
-  <div class="wrap">
-    <div class="head">
-      <h2 id="h-precios">Precios</h2>
-      <p>Precios actualizados a noviembre de 2026. Son precios desde, en soles. Todo incluye limado, cutícula y color entero o francesa. El diseño se suma por cada uña que lo lleve. La movilidad está incluida en San Miguel; en otros distritos tiene un costo adicional. Mándame tu foto de referencia y te paso el total antes de ir.</p>
-    </div>
-    <ul class="svc-list">
-<li class="svc"><h3>Soft gel</h3><p>Uñas largas que pesan poco. Duran de 3 a 4 semanas.</p><span class="pr"><small>desde</small>S/ 90</span><a class="link ask" data-wa="Hola Jessie, quiero cotizar soft gel. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
-<li class="svc"><h3>Builder gel</h3><p>Para tu uña natural, si se te quiebra o la quieres más dura.</p><span class="pr"><small>desde</small>S/ 80</span><a class="link ask" data-wa="Hola Jessie, quiero cotizar builder gel. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
-<li class="svc"><h3>Poly gel</h3><p>Resistente, liviano y sin olor fuerte.</p><span class="pr"><small>desde</small>S/ 100</span><a class="link ask" data-wa="Hola Jessie, quiero cotizar poly gel. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
-<li class="svc"><h3>Acrílico</h3><p>Para largos de verdad, stiletto o coffin.</p><span class="pr"><small>desde</small>S/ 110</span><a class="link ask" data-wa="Hola Jessie, quiero cotizar acrílico. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
-<li class="svc"><h3>Diseños y 3D</h3><p>Flores en relieve, piedras, estrellas, lunares. Se cobra por cada uña con diseño.</p><span class="pr"><small>por uña</small>S/ 10</span><a class="link ask" data-wa="Hola Jessie, quiero cotizar un diseño. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
-<li class="svc"><h3>Retiro o relleno</h3><p>Te retiro el set sin maltratar la uña, o hago relleno si ya tienes uno.</p><span class="pr"><small>desde</small>S/ 30</span><a class="link ask" data-wa="Hola Jessie, quiero cotizar retiro o relleno. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
-    </ul>
-    <p class="hyg">Higiene: uso limas y palitos nuevos con cada clienta.<!-- [POR CONFIRMAR] Solo si es cierto, agregar: Mis alicates y empujadores van esterilizados en bolsa sellada y la abro frente a ti. --></p>
-  </div>
 </section>
 
 <section class="sec nude" id="trabajos" aria-labelledby="h-trabajos">
@@ -587,12 +561,12 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
     <p>Fotos de clientas reales. Los más recientes los subo a <a class="link" href="https://www.instagram.com/rare.nail.it/" target="_blank" rel="noopener">mi Instagram</a>.</p>
   </div>
   <div class="strip" role="region" tabindex="0" aria-label="Galería de trabajos, desliza horizontalmente">
-    <figure><button type="button" data-full="img/manicure-nude-perlado-lunares-fucsia-lima.webp" data-cap="Nude perlado con lunares fucsia" aria-label="Ampliar: Nude perlado con lunares fucsia"><picture><source type="image/webp" srcset="img/manicure-nude-perlado-lunares-fucsia-lima-640.webp 640w, img/manicure-nude-perlado-lunares-fucsia-lima.webp 920w" sizes="(min-width: 900px) 28vw, 80vw"><img src="img/manicure-nude-perlado-lunares-fucsia-lima-640.jpg" srcset="img/manicure-nude-perlado-lunares-fucsia-lima-640.jpg 640w, img/manicure-nude-perlado-lunares-fucsia-lima.jpg 920w" sizes="(min-width: 900px) 28vw, 80vw" width="640" height="800" loading="lazy" decoding="async" alt="Uñas cortas nude perlado con lunares fucsia y francesa fina fucsia"></picture></button><figcaption>Nude perlado con lunares fucsia</figcaption></figure>
-    <figure><button type="button" data-full="img/unas-soft-gel-lunares-celeste-flor-3d-lima.webp" data-cap="Celeste con flor 3D y lunares" aria-label="Ampliar: Celeste con flor 3D y lunares"><picture><source type="image/webp" srcset="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.webp 640w, img/unas-soft-gel-lunares-celeste-flor-3d-lima.webp 1094w" sizes="(min-width: 900px) 28vw, 80vw"><img src="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.jpg" srcset="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.jpg 640w, img/unas-soft-gel-lunares-celeste-flor-3d-lima.jpg 1094w" sizes="(min-width: 900px) 28vw, 80vw" width="640" height="800" loading="lazy" decoding="async" alt="Uñas almendradas celeste con lunares negros, flor blanca en 3D, francesa blanca y estrella dorada con cristales"></picture></button><figcaption>Celeste con flor 3D y lunares</figcaption></figure>
     <figure><button type="button" data-full="img/unas-almendradas-rosa-lunares-rayas-lima.webp" data-cap="Rosa con lunares y rayitas" aria-label="Ampliar: Rosa con lunares y rayitas"><picture><source type="image/webp" srcset="img/unas-almendradas-rosa-lunares-rayas-lima-640.webp 640w, img/unas-almendradas-rosa-lunares-rayas-lima.webp 1094w" sizes="(min-width: 900px) 28vw, 80vw"><img src="img/unas-almendradas-rosa-lunares-rayas-lima-640.jpg" srcset="img/unas-almendradas-rosa-lunares-rayas-lima-640.jpg 640w, img/unas-almendradas-rosa-lunares-rayas-lima.jpg 1094w" sizes="(min-width: 900px) 28vw, 80vw" width="640" height="800" loading="lazy" decoding="async" alt="Uñas stiletto y almendra rosa con lunares, puntas de rayas celeste, rosa y vino, flor 3D y estrellas doradas"></picture></button><figcaption>Rosa con lunares y rayitas</figcaption></figure>
     <figure><button type="button" data-full="img/manicure-rojo-lunares-blancos-lima.webp" data-cap="Rojo con lunares blancos" aria-label="Ampliar: Rojo con lunares blancos"><picture><source type="image/webp" srcset="img/manicure-rojo-lunares-blancos-lima-640.webp 640w, img/manicure-rojo-lunares-blancos-lima.webp 1200w" sizes="(min-width: 900px) 28vw, 80vw"><img src="img/manicure-rojo-lunares-blancos-lima-640.jpg" srcset="img/manicure-rojo-lunares-blancos-lima-640.jpg 640w, img/manicure-rojo-lunares-blancos-lima.jpg 1200w" sizes="(min-width: 900px) 28vw, 80vw" width="640" height="800" loading="lazy" decoding="async" alt="Manicure rojo cereza con lunares blancos, francesa roja y flores doradas en uñas cortas redondeadas"></picture></button><figcaption>Rojo con lunares blancos</figcaption></figure>
     <figure><button type="button" data-full="img/manicure-francesa-micro-nude-cuadradas-lima.webp" data-cap="Francesa micro en nude" aria-label="Ampliar: Francesa micro en nude"><picture><source type="image/webp" srcset="img/manicure-francesa-micro-nude-cuadradas-lima-640.webp 640w, img/manicure-francesa-micro-nude-cuadradas-lima.webp 960w" sizes="(min-width: 900px) 28vw, 80vw"><img src="img/manicure-francesa-micro-nude-cuadradas-lima-640.jpg" srcset="img/manicure-francesa-micro-nude-cuadradas-lima-640.jpg 640w, img/manicure-francesa-micro-nude-cuadradas-lima.jpg 960w" sizes="(min-width: 900px) 28vw, 80vw" width="640" height="800" loading="lazy" decoding="async" alt="Uñas cuadradas medianas en tono nude con francesa blanca muy fina"></picture></button><figcaption>Francesa micro en nude</figcaption></figure>
     <figure><button type="button" data-full="img/manicure-francesa-blanca-unas-cortas-lima.webp" data-cap="Francesa clásica en uña corta" aria-label="Ampliar: Francesa clásica en uña corta"><picture><source type="image/webp" srcset="img/manicure-francesa-blanca-unas-cortas-lima-640.webp 640w, img/manicure-francesa-blanca-unas-cortas-lima.webp 880w" sizes="(min-width: 900px) 28vw, 80vw"><img src="img/manicure-francesa-blanca-unas-cortas-lima-640.jpg" srcset="img/manicure-francesa-blanca-unas-cortas-lima-640.jpg 640w, img/manicure-francesa-blanca-unas-cortas-lima.jpg 880w" sizes="(min-width: 900px) 28vw, 80vw" width="640" height="800" loading="lazy" decoding="async" alt="Manicure francesa clásica con línea blanca sobre base rosada en uñas cortas cuadradas"></picture></button><figcaption>Francesa clásica en uña corta</figcaption></figure>
+    <figure><button type="button" data-full="img/unas-soft-gel-lunares-celeste-flor-3d-lima.webp" data-cap="Celeste con flor 3D y lunares" aria-label="Ampliar: Celeste con flor 3D y lunares"><picture><source type="image/webp" srcset="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.webp 640w, img/unas-soft-gel-lunares-celeste-flor-3d-lima.webp 1094w" sizes="(min-width: 900px) 28vw, 80vw"><img src="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.jpg" srcset="img/unas-soft-gel-lunares-celeste-flor-3d-lima-640.jpg 640w, img/unas-soft-gel-lunares-celeste-flor-3d-lima.jpg 1094w" sizes="(min-width: 900px) 28vw, 80vw" width="640" height="800" loading="lazy" decoding="async" alt="Uñas almendradas celeste con lunares negros, flor blanca en 3D, francesa blanca y estrella dorada con cristales"></picture></button><figcaption>Celeste con flor 3D y lunares</figcaption></figure>
+    <figure><button type="button" data-full="img/manicure-nude-perlado-lunares-fucsia-lima.webp" data-cap="Nude perlado con lunares fucsia" aria-label="Ampliar: Nude perlado con lunares fucsia"><picture><source type="image/webp" srcset="img/manicure-nude-perlado-lunares-fucsia-lima-640.webp 640w, img/manicure-nude-perlado-lunares-fucsia-lima.webp 920w" sizes="(min-width: 900px) 28vw, 80vw"><img src="img/manicure-nude-perlado-lunares-fucsia-lima-640.jpg" srcset="img/manicure-nude-perlado-lunares-fucsia-lima-640.jpg 640w, img/manicure-nude-perlado-lunares-fucsia-lima.jpg 920w" sizes="(min-width: 900px) 28vw, 80vw" width="640" height="800" loading="lazy" decoding="async" alt="Uñas cortas nude perlado con lunares fucsia y francesa fina fucsia"></picture></button><figcaption>Nude perlado con lunares fucsia</figcaption></figure>
   </div>
   <p class="below"><a class="btn btn-line" href="https://www.instagram.com/rare.nail.it/" target="_blank" rel="noopener">Ver más en Instagram</a></p>
 </section>
@@ -613,29 +587,60 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
 </section>
 -->
 
-<section class="sec" id="tecnicas" aria-labelledby="h-tecnicas">
+<section class="sec" id="precios" aria-labelledby="h-precios">
   <div class="wrap">
     <div class="head">
-      <h2 id="h-tecnicas">¿Soft gel, builder, poly gel o acrílico?</h2>
-      <p>Es lo que más me preguntan. Las cuatro duran entre 3 y 4 semanas. Cambia el largo que aguantan y cómo se sienten.</p>
+      <h2 id="h-precios">Precios</h2>
+      <p>Precios actualizados a noviembre de 2026. Son precios desde, en soles. Todo incluye limado, cutícula y color entero o francesa. El diseño se suma por cada uña que lo lleve. La movilidad está incluida en San Miguel y en otros distritos se suma según la zona (mira la lista de abajo); en San Borja, Surco y Barranco atiendo servicios desde S/ 100. Mándame tu foto de referencia y te paso el total antes de ir.</p>
     </div>
-    <div class="tw">
-      <table>
-        <caption>Técnicas de uñas que hago a domicilio en Lima</caption>
-        <thead><tr><th scope="col">Técnica</th><th scope="col">Para quién</th><th scope="col">Largo</th><th scope="col">Desde</th></tr></thead>
-        <tbody>
-          <tr><th scope="row">Soft gel</th><td>Si quieres uñas largas pero ligeras</td><td>Corto a largo</td><td>S/ 90</td></tr>
-          <tr><th scope="row">Builder</th><td>Si tu uña se quiebra y la quieres más dura</td><td>Corto a medio</td><td>S/ 80</td></tr>
-          <tr><th scope="row">Poly gel</th><td>Si quieres algo resistente que no pese</td><td>Medio a largo</td><td>S/ 100</td></tr>
-          <tr><th scope="row">Acrílico</th><td>Si quieres largos extremos o stiletto</td><td>Largo a extra largo</td><td>S/ 110</td></tr>
-        </tbody>
-      </table>
+    <ul class="svc-list">
+<li class="svc"><h3>Soft gel</h3><p>Ligeras y naturales, cortas o largas. Duran de 3 a 4 semanas.</p><span class="pr"><small>desde</small>S/ 90</span><a class="link ask" data-wa="Hola Jessie, quiero cotizar soft gel. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
+<li class="svc"><h3>Builder gel</h3><p>Para tu uña natural, si se te quiebra o la quieres más dura.</p><span class="pr"><small>desde</small>S/ 80</span><a class="link ask" data-wa="Hola Jessie, quiero cotizar builder gel. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
+<li class="svc"><h3>Poly gel</h3><p>Resistente, liviano y sin olor fuerte.</p><span class="pr"><small>desde</small>S/ 100</span><a class="link ask" data-wa="Hola Jessie, quiero cotizar poly gel. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
+<li class="svc"><h3>Acrílico</h3><p>El más resistente, para uñas muy largas, stiletto o coffin.</p><span class="pr"><small>desde</small>S/ 110</span><a class="link ask" data-wa="Hola Jessie, quiero cotizar acrílico. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
+<li class="svc"><h3>Diseños y 3D</h3><p>Flores en relieve, piedras, estrellas, lunares. Desde S/ 10 por cada uña con diseño.</p><span class="pr"><small>desde</small>S/ 10<small class=per>por uña</small></span><a class="link ask" data-wa="Hola Jessie, quiero cotizar un diseño. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
+<li class="svc"><h3>Retiro o relleno</h3><p>Te retiro el set sin maltratar la uña, o hago relleno si ya tienes uno.</p><span class="pr"><small>desde</small>S/ 30</span><a class="link ask" data-wa="Hola Jessie, quiero cotizar retiro o relleno. Te mando mi foto de referencia." href="#reservar">Cotizar por WhatsApp</a></li>
+    </ul>
+    <p class="hyg">Higiene: uso limas y palitos nuevos con cada clienta.<!-- [POR CONFIRMAR] Solo si es cierto, agregar: Mis alicates y empujadores van esterilizados en bolsa sellada y la abro frente a ti. --></p>
+    <div class="zones-block" id="zonas">
+      <h3>Movilidad por distrito</h3>
+      <ul class="zones">
+        <li><b>San Miguel</b><span>Movilidad incluida</span></li>
+        <li><b>Pueblo Libre, Magdalena, Jesús María y Lince</b><span>+ S/ 10</span></li>
+        <li><b>Miraflores y San Isidro</b><span>+ S/ 25</span></li>
+        <li><b>San Borja, Surco y Barranco</b><span>+ S/ 35<small>servicios desde S/ 100</small></span></li>
+        <li><b>Otros distritos</b><span>Escríbeme y lo vemos</span></li>
+      </ul>
     </div>
-    <div class="after"><a class="btn btn-dark" data-wa="Hola Jessie, no sé qué técnica me conviene. Te cuento cómo están mis uñas." href="#reservar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Pregúntame cuál te conviene</a></div>
   </div>
 </section>
 
-<section class="sec nude about" id="sobre-mi" aria-labelledby="h-about">
+<section class="sec nude book" id="reservar" aria-labelledby="h-res">
+  <div class="wrap book-in">
+    <div>
+      <h2 id="h-res">¿Cómo reservo?</h2>
+      <ol class="steps">
+        <li>Me escribes por WhatsApp con la foto del diseño que quieres.</li>
+        <li>Te paso el precio y cuadramos día y hora.</li>
+        <li>Separas tu cita con S/ 20 por Yape o Plin.</li>
+        <li>Llego a tu casa a la hora acordada. Una cita dura entre hora y media y dos horas y media.</li>
+      </ol>
+      <div class="policy">
+        <h3>Política de reserva</h3>
+        <ul>
+          <li>Si yo llego más de 15 minutos tarde, te descuento S/ 10.</li>
+          <li>Separas tu cita con S/ 20 por Yape o Plin, que se descuenta del total.</li>
+          <li>Te espero hasta 15 minutos.</li>
+          <li>Si necesitas cancelar o cambiar la cita, avísame con al menos 12 horas de anticipación y la reprogramamos sin costo una vez.</li>
+          <li>Si cancelas con menos tiempo o no estás cuando llego, el adelanto no se devuelve.</li>
+        </ul>
+      </div>
+      <a class="btn btn-dark" data-wa="Hola Jessie, quiero sacar una cita para uñas" href="#reservar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Reservar por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec about" id="sobre-mi" aria-labelledby="h-about">
   <div class="wrap about-in">
     <figure>
       <picture><source type="image/webp" srcset="img/jessie-graduacion-manicurista-profesional-640.webp 640w, img/jessie-graduacion-manicurista-profesional.webp 960w" sizes="(min-width: 860px) 40vw, 90vw"><img src="img/jessie-graduacion-manicurista-profesional-640.jpg" srcset="img/jessie-graduacion-manicurista-profesional-640.jpg 640w, img/jessie-graduacion-manicurista-profesional.jpg 960w" sizes="(min-width: 860px) 40vw, 90vw" width="640" height="800" loading="lazy" decoding="async" alt="Jessie con birrete y estola de Manicurista Profesional en su graduación, junto a su profesora Génesis Aranguren"></picture>
@@ -657,51 +662,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
   </div>
 </section>
 
-<section class="sec nude share" id="regalar" aria-labelledby="h-regala">
-  <div class="wrap share-grid">
-    <div>
-      <h2 id="h-regala">Regala uñas</h2>
-      <p class="muted">Para un cumpleaños, Navidad o porque sí. Me escribes con el servicio que quieres regalar y te preparo un vale con el nombre de la persona. Ella me escribe cuando quiera usarlo.</p>
-      <a class="btn btn-dark" data-wa="Hola Jessie, quiero regalar un servicio de uñas" href="#reservar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Pedir un vale de regalo</a>
-    </div>
-    <div>
-      <h2>¿Te gustaron tus uñas?</h2>
-      <p class="muted">Lo que más me ayuda es que me recomiendes. Mándale mi web a una amiga con un toque.</p>
-      <a class="btn btn-line" href="https://wa.me/?text=Mira%20a%20Jessie%20de%20Rare%20Nail%20It%2C%20hace%20u%C3%B1as%20a%20domicilio%20en%20Lima%3A%20https%3A%2F%2Fcaro2870.github.io%2Frare-nail-it%2F" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Recomiéndame por WhatsApp</a>
-    </div>
-  </div>
-</section>
-
-<section class="sec book" id="reservar" aria-labelledby="h-res">
-  <div class="wrap book-grid">
-    <div id="zonas">
-      <h2>¿Dónde atiendo?</h2>
-      <ul class="zones">
-        <li><b>San Miguel</b><span>Movilidad incluida</span></li>
-        <li><b>Pueblo Libre, Magdalena, Jesús María y Lince</b><span>+ S/ 10</span></li>
-        <li><b>Miraflores y San Isidro</b><span>+ S/ 25</span></li>
-        <li><b>San Borja, Surco y Barranco</b><span>+ S/ 35<small>servicios desde S/ 100</small></span></li>
-        <li><b>Otros distritos</b><span>Escríbeme y lo vemos</span></li>
-      </ul>
-    </div>
-    <div>
-      <h2 id="h-res">¿Cómo reservo?</h2>
-      <ol class="steps">
-        <li>Me escribes por WhatsApp con la foto del diseño que quieres.</li>
-        <li>Te paso el precio y cuadramos día y hora.</li>
-        <li>Separas tu cita con S/ 20 por Yape o Plin.</li>
-        <li>Llego a tu casa a la hora acordada. Una cita dura entre hora y media y dos horas y media.</li>
-      </ol>
-      <div class="policy">
-        <h3>Política de reserva</h3>
-        <p>Para separar tu cita te pido un adelanto de S/ 20 por Yape o Plin, que se descuenta del total. Te espero hasta 15 minutos. Si necesitas cancelar o cambiar la cita, avísame con al menos 12 horas de anticipación y la reprogramamos sin costo una vez. Si cancelas con menos tiempo o no estás cuando llego, el adelanto no se devuelve. Y si yo llego más de 15 minutos tarde, te descuento S/ 10.</p>
-      </div>
-      <a class="btn btn-dark" data-wa="Hola Jessie, quiero sacar una cita para uñas" href="#reservar"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7a2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>Reservar por WhatsApp</a>
-    </div>
-  </div>
-</section>
-
-<section class="sec faq" id="preguntas" aria-labelledby="h-faq">
+<section class="sec nude faq" id="preguntas" aria-labelledby="h-faq">
   <div class="wrap faq-in">
     <h2 id="h-faq">Preguntas</h2>
     <div>
@@ -711,7 +672,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
       <details><summary>¿Cuánto demora la cita?</summary><p>Entre hora y media y dos horas y media, según la técnica, el largo y el diseño.</p></details>
       <details><summary>¿Qué técnica me conviene?</summary><p>El soft gel es el más ligero. El builder refuerza tu propia uña sin alargarla mucho. El poly gel es resistente y liviano. El acrílico aguanta los largos extremos y el stiletto. Si no sabes, cuéntame cómo están tus uñas y te recomiendo.</p></details>
       <details><summary>¿Cobras movilidad?</summary><p>En San Miguel la movilidad está incluida. En Pueblo Libre, Magdalena, Jesús María y Lince se suman S/ 10. En Miraflores y San Isidro, S/ 25. En San Borja, Surco y Barranco, S/ 35, y ahí atiendo servicios desde S/ 100. ¿Estás en otro distrito? Escríbeme y lo vemos.</p></details>
-      <details><summary>¿Cómo separo mi cita?</summary><p>Para separar tu cita te pido un adelanto de S/ 20 por Yape o Plin, que se descuenta del total. Te espero hasta 15 minutos. Si necesitas cancelar o cambiar la cita, avísame con al menos 12 horas de anticipación y la reprogramamos sin costo una vez. Si cancelas con menos tiempo o no estás cuando llego, el adelanto no se devuelve. Y si yo llego más de 15 minutos tarde, te descuento S/ 10.</p></details>
+      <details><summary>¿Cómo separo mi cita?</summary><p>Con un adelanto de S/ 20 por Yape o Plin, que se descuenta del total. Te espero hasta 15 minutos, y si yo llego más de 15 minutos tarde, te descuento S/ 10. Las reglas de cambio y cancelación están en la política de reserva, en la sección Cómo reservo.</p></details>
       <details><summary>¿Atiendes sábados y domingos?</summary><p>Sí, atiendo de lunes a domingo de 9 a. m. a 8 p. m., siempre con cita.</p></details>
       <details><summary>¿Cómo te pago?</summary><p>Con Yape, Plin, efectivo o transferencia.</p></details>
     </div>
@@ -730,6 +691,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
         <a class="btn btn-line" id="review-btn" href="#" target="_blank" rel="noopener" hidden>Dejar reseña</a>
       </div>
     </div>
+    <p class="gift">¿Quieres regalar uñas? <a class="link" data-wa="Hola Jessie, quiero regalar un servicio de uñas" href="#reservar">Pide un vale de regalo por WhatsApp</a>.</p>
     <div class="foot-grid">
       <div><b>Rare Nail It</b>Uñas a domicilio en Lima, por Jessie.</div>
       <div><b>Contacto</b><a data-wa="Hola Jessie" href="#reservar">WhatsApp</a><br><a href="https://www.instagram.com/rare.nail.it/" target="_blank" rel="noopener">@rare.nail.it</a></div>
@@ -757,7 +719,7 @@ const CONFIG = {
   // PROMOCIÓN: deja "texto" vacío para que no aparezca nada.
   // "hasta" es el último día de la promo (AAAA-MM-DD); al día siguiente se oculta sola.
   promo: {
-    texto: "Noviembre: 10 % menos si vienen 2 amigas a la misma casa. Hasta el 30/11.", // ej: "Noviembre: 10 % menos si vienen 2 amigas a la misma casa. Hasta el 30/11."
+    texto: "10 % menos si son 2 amigas en la misma casa, hasta el 30/11.", // ej: "Noviembre: 10 % menos si vienen 2 amigas a la misma casa. Hasta el 30/11."
     hasta: "2026-11-30",        // ej: "2026-11-30"
     mensaje: "Hola Jessie, quiero la promo de 2 amigas en la misma casa" // mensaje que llega a WhatsApp, ej: "Hola Jessie, quiero la promo de amigas"
   }
@@ -774,10 +736,11 @@ const CONFIG = {
       $("#promo-txt").textContent = P.texto;
       $("#promo-go").dataset.wa = P.mensaje || ("Hola Jessie, quiero la promo: " + P.texto);
       bar.hidden = false;
-      $("#promo-x").addEventListener("click", () => { bar.hidden = true; try { localStorage.setItem("promo-cerrada", P.texto); } catch (e) {} setTop(); });
+      $("#promo-x").addEventListener("click", () => { bar.hidden = true; try { localStorage.setItem("promo-cerrada", P.texto); } catch (e) {} setTop(); const mk = $(".nav .mark"); if (mk) mk.focus(); });
     }
   }
   setTop(); addEventListener("resize", setTop);
+  if (top && "ResizeObserver" in window) new ResizeObserver(setTop).observe(top);
   $$("[data-wa]").forEach(a => { a.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(a.dataset.wa); a.target = "_blank"; a.rel = "noopener"; });
   const rv = $("#review-btn"); if (rv && CONFIG.googleReviewUrl) { rv.href = CONFIG.googleReviewUrl; rv.hidden = false; }
   const y = $("#y"); if (y) y.textContent = new Date().getFullYear();
