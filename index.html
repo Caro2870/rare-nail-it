@@ -13,7 +13,8 @@
 <meta name="geo.placename" content="Lima">
 <meta name="geo.position" content="-12.0464;-77.0428">
 <meta name="ICBM" content="-12.0464, -77.0428">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#fdf9f7">
+<meta name="color-scheme" content="light">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_PE">
@@ -115,7 +116,8 @@
             "Wednesday",
             "Thursday",
             "Friday",
-            "Saturday"
+            "Saturday",
+            "Sunday"
           ],
           "opens": "09:00",
           "closes": "20:00"
@@ -270,10 +272,6 @@
   --display:"Cormorant Garamond",Georgia,serif; --it:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
   --pad:clamp(16px,4vw,56px);
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){ --paper:#000; --paper-2:#141110; --ink:#f7f1ee; --ink-2:#b9aea8; --line:rgba(255,255,255,.16); }
-}
-:root[data-theme="dark"]{ --paper:#000; --paper-2:#141110; --ink:#f7f1ee; --ink-2:#b9aea8; --line:rgba(255,255,255,.16); }
 *,*::before,*::after{box-sizing:border-box}
 [hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
@@ -558,6 +556,24 @@ body{font-weight:400}
 .hero-meta{flex-direction:column;align-items:flex-start;gap:20px}
 .hero-meta p{color:#f3e9e4}
 .svc p,.book-grid p,.plain-steps,.facts,.faq details p,.sec-top p{color:var(--ink-2);font-size:1rem}
+
+/* ===== v5: todo claro ===== */
+:root{color-scheme:light}
+.dark{background:var(--paper-2);color:var(--ink)}
+.dark .sec-top p{color:var(--ink-2)}
+.dark .sec-top p a{color:var(--ink)}
+.strip figcaption{color:var(--ink-2)}
+.gallery .btn-line{color:var(--ink);border-color:rgba(0,0,0,.35)}
+.strip{scrollbar-color:#c9a48f transparent}
+footer{background:var(--paper-2);color:var(--ink)}
+.foot-cta h2{color:var(--ink)}
+footer .btn-cream{background:var(--ink);color:#fff}
+footer .btn-line{color:var(--ink);border-color:rgba(0,0,0,.35)}
+.foot-grid{border-top-color:var(--line);color:var(--ink-2)}
+.foot-grid .label{color:#84260a}
+.foot-grid a:hover{color:var(--ink)}
+.legal{color:var(--ink-2)}
+.mega-logo{opacity:1}
 </style>
 </head>
 <body>
@@ -680,7 +696,7 @@ body{font-weight:400}
       <p>Hago uñas a domicilio en Lima con Rare Nail It. Voy a tu casa u oficina con todo mi equipo, así no tienes que moverte ni esperar turno en un salón.</p>
       <p>Lo que más disfruto son los diseños con detalle: piedras, relieve, francesas de color. Si tienes una foto de Pinterest o TikTok, mándamela y lo vemos.</p>
       <ul class="facts">
-        <li>Atiendo de lunes a sábado, de 9 a. m. a 8 p. m.</li>
+        <li>Atiendo de lunes a domingo, de 9 a. m. a 8 p. m.</li>
         <li>Uso limas y palitos nuevos con cada clienta.</li>
         <li>Llevo lámpara y materiales. Solo necesito una mesa y un enchufe cerca.</li>
         <li>Puedes pagar con Yape, Plin, efectivo o transferencia.</li>
@@ -734,9 +750,9 @@ body{font-weight:400}
   <div class="foot-grid">
     <div><span class="label">Rare Nail It</span><p>Uñas a domicilio en Lima, por Jessie.</p></div>
     <div><span class="label">Contacto</span><p><a data-wa="Hola Jessie" href="#reservar">WhatsApp</a><br><a href="https://www.instagram.com/rare.nail.it/" target="_blank" rel="noopener">@rare.nail.it</a></p></div>
-    <div><span class="label">Horario</span><p>Lunes a sábado<br>9 a. m. a 8 p. m., con cita</p></div>
+    <div><span class="label">Horario</span><p>Lunes a domingo<br>9 a. m. a 8 p. m., con cita</p></div>
   </div>
-  <img class="mega-logo" src="img/logo-rare-nail-it-by-jessie.webp" width="1430" height="1542" loading="lazy" decoding="async" alt="Rare Nail It by Jessie">
+  <img class="mega-logo" src="img/logo-rare-nail-it-by-jessie-oscuro.webp" width="1430" height="1542" loading="lazy" decoding="async" alt="Rare Nail It by Jessie">
   <div class="legal"><span>© <span id="y">2026</span> Rare Nail It</span><span>Actualizado el <time datetime="2026-11-09">9 de noviembre de 2026</time></span></div>
 </footer>
 
