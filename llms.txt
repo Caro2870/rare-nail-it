@@ -1,0 +1,36 @@
+# Rare Nail It
+
+> Rare Nail It es un servicio de manicure y uñas a domicilio en Lima, Perú, especializado en soft gel, builder gel, poly gel, uñas acrílicas y nail art hecho a mano (estrellas doradas, flores 3D, piedras, lunares y francesas de color). Se reserva por WhatsApp.
+
+- Sitio web: https://caro2870.github.io/rare-nail-it/
+- Instagram: https://www.instagram.com/rare.nail.it/
+- Ubicación: Lima, Perú (servicio a domicilio, sin local físico)
+- Zonas: Miraflores, San Isidro, Santiago de Surco, San Borja, Barranco, Jesús María, Lince, Magdalena del Mar y otros distritos previa coordinación
+- Horario: lunes a sábado, 9:00 a 20:00, previa cita
+- Pagos: efectivo, Yape, Plin, transferencia
+- Última actualización: 2026-11-09
+
+## Servicios y precios (referenciales, en soles)
+
+| Servicio | Descripción | Desde |
+|---|---|---|
+| Soft gel | Extensiones ligeras y naturales, 3–4 semanas | S/ 90 |
+| Builder gel | Refuerza y nivela la uña natural, 3–4 semanas | S/ 80 |
+| Poly gel | Resistente y liviano, sin olor fuerte, 3–4 semanas | S/ 100 |
+| Acrílico | El más resistente, largos extremos y stiletto | S/ 110 |
+| Nail art y 3D | Diseños a mano, flores 3D, piedras, estrellas | S/ 10 por uña |
+| Retiro y mantenimiento | Retiro seguro o relleno | S/ 30 |
+
+## Preguntas frecuentes
+
+- ¿Dónde hacen uñas acrílicas a domicilio en Lima? Rare Nail It, en los distritos listados arriba; se reserva por WhatsApp.
+- ¿Cuánto dura una cita? Entre 1,5 y 2,5 horas según técnica y diseño.
+- ¿Cuánto duran las uñas? Entre 3 y 4 semanas con buen cuidado.
+
+## Páginas
+
+- [Inicio y servicios](https://caro2870.github.io/rare-nail-it/#servicios)
+- [Comparativa de técnicas](https://caro2870.github.io/rare-nail-it/#tecnicas)
+- [Galería](https://caro2870.github.io/rare-nail-it/#galeria)
+- [Cómo reservar](https://caro2870.github.io/rare-nail-it/#reservar)
+- [Preguntas frecuentes](https://caro2870.github.io/rare-nail-it/#preguntas)
