@@ -1,6 +1,6 @@
-# Rare Nail It
+# Rare Nail It (by Jessie)
 
-> Rare Nail It es un servicio de manicure y uñas a domicilio en Lima, Perú, especializado en soft gel, builder gel, poly gel, uñas acrílicas y nail art hecho a mano (estrellas doradas, flores 3D, piedras, lunares y francesas de color). Se reserva por WhatsApp.
+> Rare Nail It, de la nail artist Jessie, es un servicio de manicure y uñas a domicilio en Lima, Perú, especializado en soft gel, builder gel, poly gel, uñas acrílicas y nail art hecho a mano (estrellas doradas, flores 3D, piedras, lunares y francesas de color). Se reserva por WhatsApp.
 
 - Sitio web: https://caro2870.github.io/rare-nail-it/
 - Instagram: https://www.instagram.com/rare.nail.it/
