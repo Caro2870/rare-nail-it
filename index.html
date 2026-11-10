@@ -322,7 +322,7 @@
 }
 *,*::before,*::after{box-sizing:border-box}
 [hidden]{display:none!important}
-html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--top,62px) + 10px)}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 var(--sans)}
 img{max-width:100%;display:block;height:auto}
 a{color:inherit}
@@ -345,8 +345,15 @@ p{margin:0}
 .btn:hover{opacity:.88}
 .link{font-weight:500;text-decoration:underline;text-underline-offset:3px}
 
+/* barra superior: promo opcional + nav */
+.top{position:fixed;inset:0 0 auto 0;z-index:60}
+.promo{display:flex;align-items:center;justify-content:center;gap:12px;background:var(--brown);color:#fdf9f7;padding:8px 48px 8px var(--pad);position:relative;font-size:.95rem;text-align:center}
+.promo p{margin:0}
+@media (max-width:600px){.promo{font-size:.86rem;padding-top:6px;padding-bottom:6px}}
+.promo-go{color:#fff;font-weight:500;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.promo-x{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:40px;height:40px;border:0;background:transparent;color:#fdf9f7;font-size:1.4rem;cursor:pointer}
 /* nav */
-.nav{position:fixed;inset:0 0 auto 0;z-index:60;display:flex;justify-content:space-between;align-items:center;padding:12px var(--pad);background:rgba(253,249,247,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:12px var(--pad);background:rgba(253,249,247,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .nav .mark{font:500 1.3rem/1 var(--serif);text-decoration:none}
 .nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0}
 .nav a{text-decoration:none;padding:8px 0}
@@ -354,7 +361,7 @@ p{margin:0}
 @media (max-width:760px){.nav ul li:not(:last-child){display:none}}
 
 /* portada: celular = panel de marca + foto debajo; escritorio = mitad y mitad */
-.hero{display:grid;padding-top:62px}
+.hero{display:grid;padding-top:var(--top,62px)}
 .hero-panel{background:var(--grad);color:#fdf9f7;padding:36px var(--pad) 40px;text-align:center}
 .hero .logo{display:block;margin:0 auto;width:min(64vw,36svh,320px);height:auto}
 .hero h1 .sub{display:block;font:500 clamp(1.4rem,4.6vw,1.9rem)/1.2 var(--serif);margin-top:16px}
@@ -474,7 +481,12 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
 <body>
 <a class="skip" href="#contenido">Saltar al contenido</a>
 
-<header class="nav">
+<header class="top" id="top">
+  <div class="promo" id="promo" hidden role="region" aria-label="Promoción">
+    <p><span id="promo-txt"></span> <a class="promo-go" id="promo-go" href="#reservar">Pedir por WhatsApp</a></p>
+    <button type="button" class="promo-x" id="promo-x" aria-label="Cerrar promoción">×</button>
+  </div>
+  <div class="nav">
   <a class="mark" href="#contenido" aria-label="Rare Nail It, inicio">Rare Nail It</a>
   <nav aria-label="Principal">
     <ul>
@@ -484,6 +496,7 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
       <li><a class="cta" data-wa="Hola Jessie, quiero sacar una cita para uñas" href="#reservar">Reservar</a></li>
     </ul>
   </nav>
+  </div>
 </header>
 
 <main id="contenido">
@@ -652,11 +665,32 @@ dialog.lb .x{position:fixed;top:16px;right:16px;width:48px;height:48px;border-ra
 /* ============ CONFIGURACIÓN: cambia aquí tus datos ============ */
 const CONFIG = {
   whatsapp: "51900000000",      // Número con código de país (51 = Perú), sin + ni espacios
-  googleReviewUrl: ""           // Enlace para dejar reseña en Google (cuando exista el Perfil de Empresa)
+  googleReviewUrl: "",          // Enlace para dejar reseña en Google (cuando exista el Perfil de Empresa)
+
+  // PROMOCIÓN: deja "texto" vacío para que no aparezca nada.
+  // "hasta" es el último día de la promo (AAAA-MM-DD); al día siguiente se oculta sola.
+  promo: {
+    texto: "",                  // ej: "Noviembre: 10 % menos si vienen 2 amigas a la misma casa. Hasta el 30/11."
+    hasta: "",                  // ej: "2026-11-30"
+    mensaje: ""                 // mensaje que llega a WhatsApp, ej: "Hola Jessie, quiero la promo de amigas"
+  }
 };
 /* ============================================================== */
 (() => {
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  const P = CONFIG.promo || {}, bar = $("#promo"), top = $("#top");
+  const setTop = () => { if (top) document.documentElement.style.setProperty("--top", top.offsetHeight + "px"); };
+  if (bar && P.texto) {
+    const vence = P.hasta ? new Date(P.hasta + "T23:59:59") : null;
+    let cerrada = false; try { cerrada = localStorage.getItem("promo-cerrada") === P.texto; } catch (e) {}
+    if ((!vence || new Date() <= vence) && !cerrada) {
+      $("#promo-txt").textContent = P.texto;
+      $("#promo-go").dataset.wa = P.mensaje || ("Hola Jessie, quiero la promo: " + P.texto);
+      bar.hidden = false;
+      $("#promo-x").addEventListener("click", () => { bar.hidden = true; try { localStorage.setItem("promo-cerrada", P.texto); } catch (e) {} setTop(); });
+    }
+  }
+  setTop(); addEventListener("resize", setTop);
   $$("[data-wa]").forEach(a => { a.href = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(a.dataset.wa); a.target = "_blank"; a.rel = "noopener"; });
   const rv = $("#review-btn"); if (rv && CONFIG.googleReviewUrl) { rv.href = CONFIG.googleReviewUrl; rv.hidden = false; }
   const y = $("#y"); if (y) y.textContent = new Date().getFullYear();
